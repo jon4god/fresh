@@ -6,16 +6,21 @@
 }
 
 .title {
-  margin-bottom: .6em;
+  margin-bottom: .5em;
 
   h1 {
-    font-size: (42/16)+em;
-    line-height: 1;
+    //font-size: (42/16)+em;
+    //line-height: 1.1;
 
-    .layout--cover &{
+    @extend %ellipsis;
+    padding: 1em;
+    margin: -1em;
+    width: 80%;
+
+    //.layout--cover &{
       font-size: (18/16)+em;
       line-height: 1.4;
-    }
+    //}
 
     a {
       @extend %black-link;
@@ -39,8 +44,4 @@
       }
     }
   }
-}
-
-.e2-heading h2 {
-  margin-bottom: .2em;
 }
